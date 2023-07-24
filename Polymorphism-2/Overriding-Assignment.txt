@@ -1,0 +1,86 @@
+1] Write class implementation for below hierarchy by using overriding.
+
+abstract class Employee
+{
+    abstract void IncrementSalary();
+}
+
+class Developer extends Employee
+{
+    int salary;
+    Developer(int s)
+    {
+        salary=s;
+    }  
+    void IncrementSalary()
+    {
+        salary = ((salary*10)/100)+salary;
+        System.out.println("Incremented Salary is :"+salary);  
+    }
+}
+
+class Manager extends Employee
+{
+    int salary;
+    void IncrementSalary()
+    {
+        salary = ((salary*15)/100)+salary;
+        System.out.println("Incremented Salary is :"+salary);
+    }
+}
+
+public class t
+{
+  public static void main(String[] args)
+  {
+    Scanner sc = new Scanner(System.in);
+    Manager m= new Manager();
+    System.out.println("Enter the salary of Manager");
+    m.salary=sc.nextInt();
+    m.IncrementSalary();
+  }
+}
+
+
+2] create a class named Animal with a method named printSound() that prints the sound of an 
+animal. Also create Dog, cat and pig are different types of animals, so created three subclasses 
+named Dog, Cat and Pig of the class Animal and override printSound() method in each class.
+
+abstract class Animal
+{
+    abstract void sound();
+}
+class Dog extends Animal
+{
+  void sound()
+  {
+        System.out.println("Brak");
+  }
+}
+class Cat extends Animal
+{
+  void sound()
+  {
+        System.out.println("Meow");
+  }
+}
+class Pig extends Animal
+{
+  void sound()
+  {
+        System.out.println("Oing");
+  }
+}
+
+public class main1
+{
+    public static void main(String[] args) 
+    {
+        Dog d= new Dog();
+        Cat c= new Cat();
+        Pig p=new Pig();
+        d.sound();
+        c.sound();
+        p.sound();
+    }
+}
