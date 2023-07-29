@@ -33,13 +33,13 @@ public class master {
 				}
 				case 3:
 				{
-					
+					lib.recordPanel();
+					break;
 				}
 				case 4:
 				{
 					app.display();
 					break;
-	
 				}
 				default:
 					throw new IllegalArgumentException("Unexpected value: " + choice);
