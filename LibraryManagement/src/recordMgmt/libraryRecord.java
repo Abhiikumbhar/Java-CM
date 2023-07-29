@@ -100,7 +100,7 @@ public class libraryRecord implements student, book{
 	@Override
 	public void addstud() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Adding Roll no & Name of % student\n");
+		System.out.println("Adding Roll no & Name of student\n");
 		for(int i=0;i<5;i++)
 		{
 			System.out.print("Enter Roll no of "+ (i+1) + " student : ");
