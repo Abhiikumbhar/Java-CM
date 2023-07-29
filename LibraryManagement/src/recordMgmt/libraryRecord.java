@@ -213,8 +213,8 @@ public class libraryRecord implements student, book{
 		for(int i=0;i<5;i++)
 		{
 			System.out.println("Roll no : "+ studID[i] 
-					+ " Name : " + studName[i] 
-					+ "BOOK : "+ issuedBook[i]);
+					+ " | Name : " + studName[i] 
+					+ " | BOOK : "+ issuedBook[i]);
 		}
 	}
 
